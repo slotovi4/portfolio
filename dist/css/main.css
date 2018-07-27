@@ -1,4 +1,5 @@
 /* Main */
+/* Media Query Mixins */
 html {
   font-size: 14px; }
 
@@ -148,8 +149,8 @@ a {
   transition: all 0.5s ease-out; }
   .menu-nav_show {
     /* Slide in from top */
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0); }
+    -webkit-transform: translate3d(0, 0, 0) !important;
+            transform: translate3d(0, 0, 0) !important; }
   .menu-nav__item {
     -webkit-transform: translate3d(600px, 0, 0);
             transform: translate3d(600px, 0, 0);
@@ -228,8 +229,8 @@ a {
           transform: translate3d(0, 100%, 0); }
   .menu-branding_show {
     /* Slide in from bottom */
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0); }
+    -webkit-transform: translate3d(0, 0, 0) !important;
+            transform: translate3d(0, 0, 0) !important; }
   .menu-branding__portrait {
     width: 250px;
     height: 250px;
@@ -240,3 +241,46 @@ a {
     background-position: center;
     -webkit-background-size: cover;
             background-size: cover; }
+
+/* Media */
+/* Widescreens */
+/* Desctops & Laptops */
+/* Tablets & Small Laptops */
+@media screen and (max-width: 768px) {
+  /* Home */
+  .home {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center; }
+    .home__lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  /* Menu */
+  .menu-branding,
+  .menu-nav {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    .menu-branding_show,
+    .menu-nav_show {
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0); }
+    .menu-branding__portrait {
+      width: 150px;
+      height: 150px; } }
+
+/* Smartphones */
+@media screen and (max-width: 500px) {
+  .home__lg-heading {
+    margin-top: 10vh; } }

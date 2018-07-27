@@ -1,0 +1,36 @@
+html {
+  font-size: 14px;
+}
+
+body {
+  @include background;
+  background: $primary-color;
+  color: white;
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+//Headings
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}

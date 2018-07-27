@@ -1,6 +1,8 @@
-$primary-color: #444;
+/* Main */
+@import "include/constants";
+@import "include/mixin";
+@import "include/global";
 
-body {
-  background: $primary-color;
-  color: white;
-}
+/* Home */
+@import "include/home/home";
+@import "include/home/home-icons/home-icons";

@@ -1,0 +1,25 @@
+.home {
+  padding: 4rem;
+  height: 100%;
+
+  &__lg-heading {
+    font-size: 6rem;
+  }
+
+  &__sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(lighten($primary-color, 2), 0.5);
+  }
+
+  &__text-secondary {
+    color: $secondary-color;
+  }
+}
+
+#home {
+  overflow: hidden;
+  .home__lg-heading {
+    margin-top: 20vh;
+  }
+}

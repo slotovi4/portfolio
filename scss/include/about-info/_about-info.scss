@@ -1,0 +1,35 @@
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+    "bioimage bio bio"
+    "job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr);
+
+  &__image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: 3px solid $secondary-color;
+    width: 100%;
+    max-width: 250px;
+  }
+
+  &__job {
+    background: lighten($primary-color, 5);
+    padding: 0.5rem;
+    border-bottom: 5px solid $secondary-color;
+
+    &_1 {
+      grid-area: job1;
+    }
+
+    &_2 {
+      grid-area: job2;
+    }
+
+    &_3 {
+      grid-area: job3;
+    }
+  }
+}

@@ -3,9 +3,16 @@
 @import "include/mixin";
 @import "include/global";
 
-/* Home */
+/* Home Page */
 @import "include/home/home";
 @import "include/home/home-icons/home-icons";
+
+/* About Page*/
+@import "include/about-info/about-info";
+@import "include/bio/bio";
+
+/* Footer */
+@import "include/footer/footer";
 
 /* Menu */
 @import "include/menu/menu";

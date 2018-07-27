@@ -70,3 +70,38 @@ a {
       -webkit-transition: all 0.5s ease-out;
       -o-transition: all 0.5s ease-out;
       transition: all 0.5s ease-out; }
+
+/* Menu */
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  /* Rotate Into X With Menu Lines */ }
+  .menu-btn__line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: white;
+    -webkit-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    /*Transform To X */ }
+    .menu-btn__line_close:nth-child(1) {
+      -webkit-transform: rotate(45deg) translate(5px, 5px);
+          -ms-transform: rotate(45deg) translate(5px, 5px);
+              transform: rotate(45deg) translate(5px, 5px); }
+    .menu-btn__line_close:nth-child(2) {
+      opacity: 0; }
+    .menu-btn__line_close:nth-child(3) {
+      -webkit-transform: rotate(-45deg) translate(7px, -6px);
+          -ms-transform: rotate(-45deg) translate(7px, -6px);
+              transform: rotate(-45deg) translate(7px, -6px); }
+  .menu-btn_close {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }

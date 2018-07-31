@@ -135,6 +135,41 @@ a {
     background: black;
     color: white; }
 
+/* Contact Page */
+.contact-boxes {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem; }
+  .contact-boxes__text {
+    color: #eece1a; }
+  .contact-boxes__section {
+    font-size: 2rem;
+    border: 3px solid white;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    -webkit-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out; }
+    .contact-boxes__section:hover {
+      padding: 0.5rem 1.5rem;
+      background-color: #eece1a;
+      color: black; }
+  .contact-boxes__section:hover .contact-boxes__text {
+    color: black; }
+
 /* Footer */
 .footer {
   text-align: center;

@@ -103,6 +103,38 @@ a {
   grid-area: bio;
   font-size: 1.5rem; }
 
+/* Work Page */
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr); }
+
+.projects-item__image {
+  width: 100%;
+  background-position: center;
+  border: 3px solid white;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+  .projects-item__image:hover {
+    opacity: 0.5;
+    border-color: #eece1a; }
+
+.projects-item__btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .projects-item__btn:hover {
+    background-color: #eece1a;
+    color: black; }
+  .projects-item__btn_light {
+    background: #c4c4c4;
+    color: #333; }
+  .projects-item__btn_dark {
+    background: black;
+    color: white; }
+
 /* Footer */
 .footer {
   text-align: center;
@@ -283,6 +315,11 @@ a {
 
 /* Media */
 /* Widescreens */
+@media screen and (min-width: 1171px) {
+  /* Projects */
+  .projects {
+    grid-template-columns: repeat(4, 1fr); } }
+
 /* Desctops & Laptops */
 /* Tablets & Small Laptops */
 @media screen and (max-width: 768px) {
@@ -321,9 +358,15 @@ a {
   /* About */
   .about-info {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  /* Projects */
+  .projects {
+    grid-template-columns: repeat(2, 1fr); } }
 
 /* Smartphones */
 @media screen and (max-width: 500px) {
   .home__lg-heading {
-    margin-top: 10vh; } }
+    margin-top: 10vh; }
+  /* Projects */
+  .projects {
+    grid-template-columns: 1fr; } }

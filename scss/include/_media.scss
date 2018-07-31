@@ -1,5 +1,9 @@
 /* Widescreens */
 @include mediaXl {
+  /* Projects */
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 /* Desctops & Laptops */
@@ -57,6 +61,11 @@
       "job3";
     grid-template-columns: 1fr;
   }
+
+  /* Projects */
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Smartphones */
@@ -65,5 +74,10 @@
     &__lg-heading {
       margin-top: 10vh;
     }
+  }
+
+  /* Projects */
+  .projects {
+    grid-template-columns: 1fr;
   }
 }
